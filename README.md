@@ -1,5 +1,8 @@
 ![Black](https://github.com/khan2a/telephony-mcp-server/actions/workflows/01-black.yml/badge.svg)
 ![Ruff](https://github.com/khan2a/telephony-mcp-server/actions/workflows/02-ruff.yml/badge.svg)
+
+ 📖 **Blog Post**: Learn more about this project in the detailed blog post: [Telephony MCP Server for Agentic AI and Language Models](https://developer.vonage.com/en/blog/telephony-mcp-server-for-agentic-ai-and-language-models)
+
 # Telephony MCP Server
 
 ## Demo Using Claude Desktop
