@@ -12,6 +12,18 @@ logger = logging.getLogger(__name__)
 logger.info("Loading environment variables from .env file...")
 load_dotenv()
 
+# ═══════════════════════════════════════════════════════════════════════════
+# OBSERVABILITY: Uncomment these lines to enable OpenLIT tracing
+# ═══════════════════════════════════════════════════════════════════════════
+import openlit
+import os
+_otlp_endpoint = os.getenv("OTLP_ENDPOINT", "http://127.0.0.1:4318")
+openlit.init(
+    otlp_endpoint=_otlp_endpoint,
+    application_name="telephony-mcp-server",
+)
+logger.info(f"OpenLIT tracing initialized with OTLP endpoint: {_otlp_endpoint}")
+# ═══════════════════════════════════════════════════════════════════════════
 
 def start_callback_server_process():
     """Start the callback server in a separate process"""

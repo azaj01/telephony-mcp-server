@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "Raspberry Pi SenseHat": {
+      "type": "sse",
+      "url": "https://khan2a-mcp.ngrok.io/sse"
+    },
+    "telephony": {
+      "type": "sse",
+      "url": "http://127.0.0.1:8000/mcp/"
+    }
+  }
+}

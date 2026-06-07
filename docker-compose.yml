@@ -17,5 +17,6 @@ services:
       # Add any additional environment variables here if needed
       - UV_SYSTEM_PYTHON=1
       - PYTHONUNBUFFERED=1
+      - OTLP_ENDPOINT=http://host.docker.internal:4318
       # Uncomment and set this to your public URL when deploying to production
       # - CALLBACK_SERVER_URL=https://your-public-url
